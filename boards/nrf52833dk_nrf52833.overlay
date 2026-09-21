@@ -5,14 +5,14 @@
 &pinctrl{
     i2c1_default: i2c1_default {
         group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 22)>,
-                    <NRF_PSEL(TWIM_SCL, 0, 23)>;
+            psels = <NRF_PSEL(TWIM_SDA, 0, 26)>,
+                    <NRF_PSEL(TWIM_SCL, 0, 27)>;
         };
     };
     i2c1_sleep: i2c1_sleep {
         group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 22)>,
-                    <NRF_PSEL(TWIM_SCL, 0, 23)>;
+            psels = <NRF_PSEL(TWIM_SDA, 0, 26)>,
+                    <NRF_PSEL(TWIM_SCL, 0, 27)>;
             low-power-enable;
         };
     };
@@ -31,6 +31,6 @@
         compatible = "sensirion,scd41";
         reg = <0x62>;
         label = "SCD4X";
-        mode = <0>;  
+        mode = <0>;
     };
 };
